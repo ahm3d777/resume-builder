@@ -26,12 +26,25 @@ header {
     align-items: center;
 }
 
+/* header h1 {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: auto;
+    color: rgba(255, 255, 255, 0.8);
+} */
 header h1 {
     font-size: 24px;
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
     margin-right: auto;
+    /* color: transparent; */
+    color: rgba(255, 255, 255, 0.8);
+
+    text-shadow: 0 0 10px #e4e1cb, 0 0 20px #e4e1cb, 0 0 30px #e4e1cb; /* Glowing effect */
 }
+
+
 
 nav ul {
     list-style-type: none;
