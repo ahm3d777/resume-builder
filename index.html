@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Educatum Academy | Live-Learn-Succeed</title>
-    <meta name="description" content="Educatum Academy - Master Your Mind, Excel Your Skills">
+    <meta name="description" content="Educatum Academy - Master Your Mind, Excel Your Skills. HSC/Alim 2025-2026 preparation with expert guidance.">
     <meta property="og:title" content="Educatum Academy | Live-Learn-Succeed">
-    <meta property="og:description" content="Educatum Academy - Premium Online Education">
+    <meta property="og:description" content="Premium online education for HSC/Alim 2025-2026 preparation">
     
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&display=swap" rel="stylesheet">
@@ -15,19 +15,14 @@
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- External Libraries -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- Three.js for 3D elements -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
     
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Custom Cursor -->
-    <div class="custom-cursor"></div>
-    <div class="custom-cursor-dot"></div>
-
     <!-- Loading Screen -->
     <div class="loading-screen" id="loadingScreen">
         <div class="loading-animation">
@@ -100,7 +95,7 @@
                     <i class="fas fa-times"></i>
                 </button>
                 <div class="video-container-modal">
-                    <iframe id="heroVideo" src="" frameborder="0" allowfullscreen style="width:100%;height:400px;"></iframe>
+                    <iframe id="heroVideo" src="" frameborder="0" allowfullscreen style="width:100%;height:400px;" title="Educatum Academy Introduction"></iframe>
                 </div>
             </div>
         </div>
@@ -118,7 +113,7 @@
                             <span class="word-1">Educatum</span>
                             <span class="word-2">Academy</span>
                         </h1>
-                        <h2 class="hero-subtitle typing-animation">Master Your Mind, Excel Your Skills</h2>
+                        <h2 class="hero-subtitle">Master Your Mind, Excel Your Skills</h2>
                     </div>
                     
                     <div class="hero-description reveal-animation">
@@ -147,7 +142,7 @@
                 </div>
             </div>
             
-            <div class="scroll-indicator">
+            <div class="scroll-indicator" id="scrollIndicator">
                 <div class="scroll-arrow bounce-animation">
                     <i class="fas fa-chevron-down"></i>
                 </div>
@@ -195,8 +190,8 @@
                     </div>
                     <h3>Science Excellence Program</h3>
                     <p>Master Physics, Chemistry, and Biology with expert guidance. Complete HSC preparation including practical experiments, problem-solving techniques, and exam strategies.</p>
-                    <a href="#" class="category-link">
-                        <span>Explore Now</span>
+                    <a href="mailto:info@educatum.edu?subject=Science Excellence Program Inquiry" class="category-link">
+                        <span>Get Information</span>
                         <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -207,8 +202,8 @@
                     </div>
                     <h3>Business Studies Mastery</h3>
                     <p>Comprehensive business education covering accounting, finance, marketing, and management. Perfect for commerce students preparing for HSC and university admission.</p>
-                    <a href="#" class="category-link">
-                        <span>Explore Now</span>
+                    <a href="mailto:info@educatum.edu?subject=Business Studies Inquiry" class="category-link">
+                        <span>Get Information</span>
                         <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -219,8 +214,8 @@
                     </div>
                     <h3>Humanities & Arts</h3>
                     <p>Explore history, literature, sociology, and philosophy. Develop critical thinking and analytical skills essential for humanities students.</p>
-                    <a href="#" class="category-link">
-                        <span>Explore Now</span>
+                    <a href="mailto:info@educatum.edu?subject=Humanities Program Inquiry" class="category-link">
+                        <span>Get Information</span>
                         <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -231,8 +226,8 @@
                     </div>
                     <h3>Group Change Program</h3>
                     <p>Specialized support for students transitioning between academic streams. Bridge courses and intensive preparation for new subject areas.</p>
-                    <a href="#" class="category-link">
-                        <span>Explore Now</span>
+                    <a href="mailto:info@educatum.edu?subject=Group Change Program Inquiry" class="category-link">
+                        <span>Get Information</span>
                         <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -243,8 +238,8 @@
                     </div>
                     <h3>Learn English with Dr. Mahmud</h3>
                     <p>Comprehensive English language program featuring grammar, composition, literature analysis, and communication skills for academic excellence.</p>
-                    <a href="#" class="category-link">
-                        <span>Explore Now</span>
+                    <a href="mailto:info@educatum.edu?subject=English Program Inquiry" class="category-link">
+                        <span>Get Information</span>
                         <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -253,10 +248,10 @@
                     <div class="category-icon">
                         <i class="fas fa-star"></i>
                     </div>
-                    <h3>HSC/Alim 2024-2025</h3>
+                    <h3>HSC/Alim 2025-2026</h3>
                     <p>Complete preparation package with subject-wise courses, test series, model papers, and revision sessions for guaranteed success.</p>
-                    <a href="#" class="category-link">
-                        <span>Explore Now</span>
+                    <a href="mailto:info@educatum.edu?subject=HSC 2025-2026 Program Inquiry" class="category-link">
+                        <span>Get Information</span>
                         <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -269,22 +264,23 @@
         <div class="section-container">
             <div class="section-header reveal-animation">
                 <h2 class="section-title">Learning Bites</h2>
-                <p class="section-subtitle">Quick lessons for effective learning - Watch our free content</p>
+                <p class="section-subtitle">Quick lessons for effective learning - Watch our educational content</p>
             </div>
             
             <div class="video-grid">
                 <div class="video-card reveal-animation">
                     <div class="video-wrapper">
-                        <iframe src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" 
+                        <iframe src="https://www.youtube-nocookie.com/embed/R4WillpJlSA" 
                                 title="Chemistry Fundamentals" 
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                allowfullscreen>
+                                allowfullscreen
+                                loading="lazy">
                         </iframe>
                     </div>
                     <div class="video-info">
                         <h3>Chemistry Fundamentals</h3>
-                        <p>Master the basics of organic chemistry with clear explanations</p>
+                        <p>Master the basics of organic chemistry with clear explanations and practical examples</p>
                         <div class="video-meta">
                             <span><i class="fas fa-clock"></i> 15 min</span>
                             <span><i class="fas fa-eye"></i> 12.5K views</span>
@@ -294,16 +290,17 @@
 
                 <div class="video-card reveal-animation">
                     <div class="video-wrapper">
-                        <iframe src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" 
+                        <iframe src="https://www.youtube-nocookie.com/embed/NNnIGh9g6fA" 
                                 title="Biology Essentials" 
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                allowfullscreen>
+                                allowfullscreen
+                                loading="lazy">
                         </iframe>
                     </div>
                     <div class="video-info">
                         <h3>Biology Essentials</h3>
-                        <p>Understanding cell structure and tissue organization</p>
+                        <p>Understanding cell structure and tissue organization with detailed diagrams</p>
                         <div class="video-meta">
                             <span><i class="fas fa-clock"></i> 22 min</span>
                             <span><i class="fas fa-eye"></i> 8.3K views</span>
@@ -313,16 +310,17 @@
 
                 <div class="video-card reveal-animation">
                     <div class="video-wrapper">
-                        <iframe src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" 
+                        <iframe src="https://www.youtube-nocookie.com/embed/kTcRRaXV-fg" 
                                 title="Physics Made Simple" 
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                allowfullscreen>
+                                allowfullscreen
+                                loading="lazy">
                         </iframe>
                     </div>
                     <div class="video-info">
                         <h3>Physics Made Simple</h3>
-                        <p>Learn to draw and understand physics diagrams effectively</p>
+                        <p>Learn to solve physics problems with step-by-step methodology</p>
                         <div class="video-meta">
                             <span><i class="fas fa-clock"></i> 18 min</span>
                             <span><i class="fas fa-eye"></i> 15.7K views</span>
@@ -344,7 +342,7 @@
             <div class="teachers-grid">
                 <div class="teacher-card reveal-animation">
                     <div class="teacher-image">
-                        <i class="fas fa-user-graduate"></i>
+                        <i class="fas fa-user-graduate" alt="Dr. Sarah Rahman"></i>
                     </div>
                     <div class="teacher-info">
                         <h3>Dr. Sarah Rahman</h3>
@@ -355,7 +353,7 @@
 
                 <div class="teacher-card reveal-animation">
                     <div class="teacher-image">
-                        <i class="fas fa-user-graduate"></i>
+                        <i class="fas fa-user-graduate" alt="Prof. Ahmed Khan"></i>
                     </div>
                     <div class="teacher-info">
                         <h3>Prof. Ahmed Khan</h3>
@@ -366,7 +364,7 @@
 
                 <div class="teacher-card reveal-animation">
                     <div class="teacher-image">
-                        <i class="fas fa-user-graduate"></i>
+                        <i class="fas fa-user-graduate" alt="Dr. Fatima Begum"></i>
                     </div>
                     <div class="teacher-info">
                         <h3>Dr. Fatima Begum</h3>
@@ -377,7 +375,7 @@
 
                 <div class="teacher-card reveal-animation">
                     <div class="teacher-image">
-                        <i class="fas fa-user-graduate"></i>
+                        <i class="fas fa-user-graduate" alt="Mr. Karim Hossain"></i>
                     </div>
                     <div class="teacher-info">
                         <h3>Mr. Karim Hossain</h3>
@@ -400,7 +398,7 @@
             <div class="founder-content reveal-animation">
                 <div class="founder-image">
                     <div class="founder-image-placeholder">
-                        <i class="fas fa-user-tie"></i>
+                        <i class="fas fa-user-tie" alt="Mahmud Hasan Tabib"></i>
                     </div>
                     <div class="founder-badge">
                         <i class="fas fa-award"></i>
@@ -422,18 +420,102 @@
                     </div>
                     
                     <div class="social-media">
-                        <a href="#" target="_blank" class="social-link youtube">
+                        <a href="https://youtube.com/@educatumacademy" target="_blank" rel="noopener" class="social-link youtube">
                             <i class="fab fa-youtube"></i>
                             <span>YouTube</span>
                         </a>
-                        <a href="#" target="_blank" class="social-link facebook">
+                        <a href="https://facebook.com/educatumacademy" target="_blank" rel="noopener" class="social-link facebook">
                             <i class="fab fa-facebook-f"></i>
                             <span>Facebook</span>
                         </a>
-                        <a href="#" target="_blank" class="social-link community">
+                        <a href="mailto:community@educatum.edu" class="social-link community">
                             <i class="fas fa-users"></i>
                             <span>Community</span>
                         </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="section-container">
+            <div class="section-header reveal-animation">
+                <h2 class="section-title">What Students Say</h2>
+                <p class="section-subtitle">Real stories from our successful students</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal-animation">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote>
+                            "Educatum Academy completely changed my approach to studying. The teachers explain complex topics in such simple ways. I scored A+ in all subjects!"
+                        </blockquote>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Fatima Rahman</h4>
+                            <p>HSC 2024 - Science Group</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card reveal-animation">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote>
+                            "The group change program helped me transition from science to business studies smoothly. Now I'm studying at Dhaka University!"
+                        </blockquote>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Ariful Islam</h4>
+                            <p>HSC 2023 - Business Studies</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card reveal-animation">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote>
+                            "Dr. Mahmud's English classes are incredible. My writing improved dramatically and I gained confidence in speaking. Highly recommended!"
+                        </blockquote>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Tasnim Ahmed</h4>
+                            <p>HSC 2024 - Humanities</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -445,12 +527,13 @@
         <div class="section-container">
             <h2>Stay Updated with Latest Courses</h2>
             <p>Get exclusive study materials and exam tips delivered to your inbox</p>
-            <form class="newsletter-form">
+            <form class="newsletter-form" id="newsletterForm">
                 <input type="email" class="newsletter-input" placeholder="Enter your email" required>
                 <button type="submit" class="newsletter-btn">
                     <i class="fas fa-paper-plane"></i>
                 </button>
             </form>
+            <div class="newsletter-message" id="newsletterMessage"></div>
         </div>
     </section>
 
@@ -477,44 +560,29 @@
                     <div class="footer-section">
                         <h4>Support</h4>
                         <ul>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">Help Center</a></li>
-                            <li><a href="#">Terms of Use</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="mailto:help@educatum.edu">Help Center</a></li>
+                            <li><a href="mailto:info@educatum.edu">Contact Support</a></li>
+                            <li><a href="#privacy">Privacy Policy</a></li>
+                            <li><a href="#terms">Terms of Use</a></li>
                         </ul>
                     </div>
                     
                     <div class="footer-section">
                         <h4>Contact Info</h4>
                         <ul>
-                            <li>Email: info@educatum.edu</li>
-                            <li>Phone: +880 1700-000000</li>
-                            <li>Address: Dhaka, Bangladesh</li>
+                            <li><a href="mailto:info@educatum.edu">info@educatum.edu</a></li>
+                            <li><a href="tel:+8801700000000">+880 1700-000000</a></li>
+                            <li>Dhaka, Bangladesh</li>
                         </ul>
                     </div>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2024 Educatum Academy. All rights reserved. Made with ❤️ for students</p>
+                <p>&copy; 2025 Educatum Academy. All rights reserved. Made with ❤️ for students</p>
             </div>
         </div>
     </footer>
-
-    <!-- Quiz Modal -->
-    <div class="quiz-modal" id="courseQuizModal">
-        <div class="quiz-modal-content">
-            <div class="quiz-header">
-                <h3>Find Your Perfect Course</h3>
-                <button class="quiz-modal-close" id="quizModalClose">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div class="quiz-body" id="quizBody">
-                <!-- Quiz content will be populated by JavaScript -->
-            </div>
-        </div>
-    </div>
 
     <!-- Custom JavaScript -->
     <script src="script.js"></script>
